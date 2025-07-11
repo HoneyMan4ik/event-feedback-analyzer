@@ -31,9 +31,19 @@ http://localhost:8080/swagger-ui/index.html
 
 ## Postman Collection
 A Postman collection is included in the **docs/** folder
-## Running the App
+# Running the App
 
-# Using Docker
+## Configuration
+To run the app, you need to configure your Hugging Face API key
+
+1. Copy the example properties file:
+
+   **cp src/main/resources/application.properties.example src/main/resources/application**
+
+2. Open **src/main/resources/application.properties** and replace:
+   huggingface.api.key=YOUR_API_KEY_HERE
+   with your actual Hugging Face API token
+## Using Docker
 ### Build the image
 docker build -t event-feedback-analyzer .
 
