@@ -1,0 +1,109 @@
+{
+	"info": {
+		"_postman_id": "e5c62a99-8326-4a1c-a630-d9474713b0ea",
+		"name": "ibm_task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "45776377",
+		"_collection_link": "https://skebob-2567672.postman.co/workspace/skebob's-Workspace~e7f2a5ca-844a-4b09-8ce6-335054de8b0c/collection/45776377-e5c62a99-8326-4a1c-a630-d9474713b0ea?action=share&source=collection_link&creator=45776377"
+	},
+	"item": [
+		{
+			"name": "CreaeteEvent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"title\": \"Lection\",\n    \"description\": \"Lection about Java\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetEvents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/events",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"events"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SubmitFeedback",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"text\":\"OK\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/events/1/feedback",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"events",
+						"1",
+						"feedback"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetSummary",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/events/1/summary",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"events",
+						"1",
+						"summary"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
